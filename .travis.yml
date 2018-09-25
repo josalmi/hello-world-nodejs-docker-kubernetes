@@ -3,5 +3,6 @@ services:
   - docker
 
 script:
+  - ls -lah
   - docker build -t test .
-  - docker run --rm test /bin/sh ls -lah
+  - docker run --rm test ls -lah
