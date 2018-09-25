@@ -3,4 +3,5 @@ services:
   - docker
 
 script:
-  - docker build .
+  - docker build -t test .
+  - docker run --rm test /bin/sh ls -lah
